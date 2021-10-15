@@ -1,0 +1,82 @@
+/* Colors Used:
+Primary color(purple): A074BD, (160,116,189)
+Secondary color(gray): 6F6F6F, (111,111,111)
+Accent color(teal): 6CB9AA,(108,185,170)
+Text color(black): 000000, (0,0,0)
+background (white): FFFFFF, (255,255,255)
+
+Font family: Merriweather and Open Sans
+*/
+body {
+  background-color: #f9f9f9;
+}
+img{
+  width: 100%;
+}
+body{
+  background-color: #FFFFFF;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;/*need to check what line height is best*/
+  color: #000000;
+}
+h1, h2, h3, h4{line-height: 1.4;}
+h1{
+  font-size:2.75em;
+  font-weight: 700;
+}
+h2{
+  font-size:2.25em;
+  font-weight: 700;
+}
+h3{
+  font-size:1.75em;
+  font-weight: 400;
+}
+h4{
+  font-size:1.35em;
+  font-weight: 400;
+}
+p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #000000;
+}
+a {
+  font-weight: 700;
+  color: #449A89;/*variation of accent color*/
+  text-decoration: none; /* No underlining */
+}
+a:visited { /* visited link */
+  color: #A074BD;
+}
+a:hover, a:focus {
+  color: #298271;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:active { /* selected link */
+  color: #7E4DA0;
+}
+.button{
+  display: inline-block;
+  background-color: #A074BD;
+  color: #000000;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #6CB9AA;/*width of border, type, color*/
+  transition: 0.2 opacity;
+}
+.button:hover{
+  opacity: 0.8;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.button:active{
+  background-color: #7E4DA0;
+  color: #ffffff;
+  border-bottom: 2px solid #298271;
+}
