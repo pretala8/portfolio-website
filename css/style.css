@@ -104,3 +104,18 @@ a:active { /* selected link */
   color: #000000;
   border-bottom: 2px solid #298271;
 }
+.button-contact{
+  background-color: transparent;
+  color: #449A89;
+  text-transform: uppercase;
+  border: 2px solid #449A89;
+}
+.button-contact:hover, .button-contact:focus{
+  background-color: #449A89;
+  text-decoration: none;
+  color: #000000;
+}
+.button-contact:active{
+  background-color: #449A89;
+  color: #000000;
+}
