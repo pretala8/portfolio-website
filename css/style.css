@@ -84,12 +84,12 @@ a:active { /* selected link */
 }
 .button{
   display: inline-block;
-  background-color: #A074BD;
+  background-color: #298271;
   color: #ffffff;
   font-weight: 700;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #6CB9AA;/*width of border, type, color*/
+  border-bottom: 2px solid #A074BD;/*width of border, type, color*/
   transition: 0.2 opacity;
 }
 .button:visited{
@@ -100,9 +100,9 @@ a:active { /* selected link */
   text-decoration: none;
 }
 .button:active{
-  background-color: #7E4DA0;
+  background-color: #6CB9AA;
   color: #000000;
-  border-bottom: 2px solid #298271;
+  border-bottom: 2px solid #7E4DA0;
 }
 .button-contact{
   background-color: transparent;
