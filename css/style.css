@@ -7,6 +7,9 @@ background (white): FFFFFF, (255,255,255)
 
 Font family: Merriweather and Open Sans
 */
+*{
+  box-sizing: border-box;
+}
 body {
   background-color: #f9f9f9;
 }
