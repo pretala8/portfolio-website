@@ -8,7 +8,7 @@ background (white): FFFFFF, (255,255,255)
 Font family: Merriweather and Open Sans
 */
 *{
-  box-sizing: border-box;
+  box-sizing: border-box;/*sets default width of all elements to include padding and border*/
 }
 body {
   background-color: #f9f9f9;
@@ -121,4 +121,8 @@ a:active { /* selected link */
 .button-contact:active{
   background-color: #449A89;
   color: #000000;
+}
+/*Layout Styling*/
+.container{
+  padding: 0 15px;
 }
