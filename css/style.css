@@ -7,129 +7,208 @@ background (white): FFFFFF, (255,255,255)
 
 Font family: Merriweather and Open Sans
 */
-*{
-  box-sizing: border-box;/*sets default width of all elements to include padding and border*/
+* {
+  box-sizing: border-box;
+  /*sets default width of all elements to include padding and border*/
 }
+
 body {
   background-color: #f9f9f9;
 }
-img{
+
+img {
   width: 100%;
 }
-body{
+
+body {
   background-color: #FFFFFF;
   font-family: 'Merriweather', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  line-height: 1.6;/*need to check what line height is best*/
+  line-height: 1.6;
+  /*need to check what line height is best*/
   color: #000000;
 }
-h1, h2, h3, h4{line-height: 1.4;}
-h1{
-  font-size:2.75em;
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
   font-weight: 700;
 }
-h2{
-  font-size:2.25em;
+
+h2 {
+  font-size: 2.25em;
   font-weight: 700;
 }
-h3{
-  font-size:1.75em;
+
+h3 {
+  font-size: 1.75em;
   font-weight: 400;
 }
-h4{
-  font-size:1.35em;
+
+h4 {
+  font-size: 1.35em;
   font-weight: 400;
 }
-p{
+
+p {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
   color: #000000;
 }
+
 a {
   font-weight: 700;
-  color: #449A89;/*variation of accent color*/
-  text-decoration: none; /* No underlining */
+  color: #449A89;
+  /*variation of accent color*/
+  text-decoration: none;
+  /* No underlining */
 }
-a:visited { /* visited link */
+
+a:visited {
+  /* visited link */
   color: #A074BD;
 }
+
 a:hover, a:focus {
   color: #298271;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #7E4DA0;
 }
+
 /*fixing hyperlink styles for navigation*/
-.logo{
-  display: inline-block;
-  max-width: 100px;/*affects img size only*/
-}
-.navlinks{
-  font-size: 20px;
+.navlinks {
+  font-size: 16px;
   color: #000000;
 }
-.navlinks:visited{
+
+.navlinks:visited {
   color: #000000;
 }
-.navlinks:hover, .navlinks:focus{
-  color: #298271;
+
+.navlinks:hover, .navlinks:focus {
+  color: #ffffff;
   text-decoration: none;
 }
-.navlinks:active{
-  color: #298271;
+
+.navlinks:active {
+  color: #ffffff;
 }
-.navlinks.name{
+
+.navlinks.name {
   font-size: 24px;
 }
-.button{
+
+.button {
   display: inline-block;
   background-color: #298271;
   color: #ffffff;
   font-weight: 700;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #A074BD;/*width of border, type, color*/
+  border-bottom: 2px solid #A074BD;
+  /*width of border, type, color*/
   transition: 0.2 opacity;
 }
-.button:visited{
+
+.button:visited {
   color: #ffffff;
 }
-.button:hover, .button:focus{
+
+.button:hover, .button:focus {
   opacity: 0.8;
   text-decoration: none;
 }
-.button:active{
+
+.button:active {
   background-color: #6CB9AA;
   color: #000000;
   border-bottom: 2px solid #7E4DA0;
 }
-.button-contact{
+
+.button-contact {
   background-color: transparent;
   color: #449A89;
   text-transform: uppercase;
   border: 2px solid #449A89;
 }
-.button-contact:hover, .button-contact:focus{
+
+.button-contact:hover, .button-contact:focus {
   background-color: #449A89;
   text-decoration: none;
   color: #000000;
 }
-.button-contact:active{
+
+.button-contact:active {
   background-color: #449A89;
   color: #000000;
 }
+
+.logo {
+  max-width: 150px;
+  /*affects img size only*/
+}
+
 /*Layout Styling*/
-.container{
+.container {
   padding: 0 15px;
 }
+
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
-#work .row{
+
+#work .row {
   padding-bottom: 25px;
   border-bottom: 2px solid #6F6F6F;
+}
+
+#hero h1 {
+  text-align: center;
+  /* Centers text */
+}
+
+#logo-link {
+  display: inline-block;
+  max-width: 250px;
+  /*affects link text and img size*/
+}
+
+header {
+  background-color: #A074BD;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  /*color: #4a4a4a;*/
+  /*for :visited, :hover, :active, styles have been changed using class navlinks (check stylings above in lines 66-83)*/
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
 }
