@@ -105,10 +105,9 @@ a:active {
   color: #ffffff;
 }
 
-.navlinks.name {
+/*.navlinks.name {
   font-size: 24px;
-}
-
+}*/
 .button {
   display: inline-block;
   background-color: #298271;
@@ -154,10 +153,10 @@ a:active {
   color: #000000;
 }
 
-.logo {
+/*.logo {
   max-width: 150px;
-  /*affects img size only, need to update logo with name included*/
-}
+  /*affects img size only, need to update logo with name included
+}*/
 
 /*Layout Styling*/
 .container {
@@ -187,12 +186,15 @@ a:active {
   /*affects link text and img size*/
 }
 
+#logo-link:hover, #logo-link:focus {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
 header {
   background-color: #A074BD;
   text-align: center;
   padding: 10px 0;
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.7);
-  -moz-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.7);
   box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.7);
   position: fixed;
   width: 100%;
@@ -226,6 +228,7 @@ nav {
   display: inline-block;
   width: 100%;
 }
-main{
-  padding-top: 277px;
+
+main {
+  padding-top: 168px;
 }
