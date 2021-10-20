@@ -266,13 +266,14 @@ footer p{
   margin: 10px;
   display: inline-block;
 }
-/*.social>ul{
-  list-style-type: none;
-  padding: 0;
-}
-.social>ul>li>a>svg{
-  max-width: 50px;
-}
-.social>ul>li>a{
+.prototype{
   display: inline-block;
+  width: 100%;
+  /*padding: 0 15px;*/
+  /*margin: 0 15px;*/
+  text-align: center;
+
+}
+/*.prototype h3{
+  padding: 0 15px;
 }*/
