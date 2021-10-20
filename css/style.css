@@ -156,7 +156,7 @@ a:active {
 
 .logo {
   max-width: 150px;
-  /*affects img size only*/
+  /*affects img size only, need to update logo with name included*/
 }
 
 /*Layout Styling*/
@@ -175,6 +175,7 @@ a:active {
 }
 
 #hero h1 {
+  font-size: 2em;
   text-align: center;
   /* Centers text */
 }
@@ -182,6 +183,7 @@ a:active {
 #logo-link {
   display: inline-block;
   max-width: 250px;
+  width: 100%;
   /*affects link text and img size*/
 }
 
@@ -189,6 +191,11 @@ header {
   background-color: #A074BD;
   text-align: center;
   padding: 10px 0;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.7);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.7);
+  box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.7);
+  position: fixed;
+  width: 100%;
 }
 
 nav>ul {
@@ -211,4 +218,14 @@ nav>ul>li>a {
 nav {
   display: inline-block;
   width: 100%;
+}
+
+#hero {
+  background-color: rgba(108, 185, 170, 0.5);
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+main{
+  padding-top: 277px;
 }
