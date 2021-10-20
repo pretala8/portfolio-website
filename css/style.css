@@ -137,9 +137,13 @@ a:active {
 
 .button-contact {
   background-color: transparent;
-  color: #449A89;
+  color: #298271;
   text-transform: uppercase;
-  border: 2px solid #449A89;
+  border: 2px solid #298271;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
 }
 
 .button-contact:hover, .button-contact:focus {
@@ -232,3 +236,27 @@ nav {
 main {
   padding-top: 168px;
 }
+footer{
+  text-align: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+.social{
+  text-align: center;
+}
+
+.social>a>svg{
+  max-width: 50px;
+  margin: 10px 5px;
+  display: inline-block;
+}
+/*.social>ul{
+  list-style-type: none;
+  padding: 0;
+}
+.social>ul>li>a>svg{
+  max-width: 50px;
+}
+.social>ul>li>a{
+  display: inline-block;
+}*/
