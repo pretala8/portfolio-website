@@ -274,6 +274,9 @@ footer p{
   text-align: center;
 
 }
+.aboutsection, .skilltool{
+  text-align: center;
+}
 /*.prototype h3{
   padding: 0 15px;
 }*/
