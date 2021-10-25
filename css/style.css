@@ -183,6 +183,10 @@ a:active {
   /* Centers text */
 }
 
+#hero p{
+  text-align: center;
+}
+
 #logo-link {
   display: inline-block;
   max-width: 250px;
