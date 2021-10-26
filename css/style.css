@@ -302,6 +302,10 @@ Medium devices (640px and larger)
     margin-top: 14px;
   }
 
+  .navlinks{
+    font-size: 18px;
+  }
+
   main {
     padding-top: 125px;
   }
