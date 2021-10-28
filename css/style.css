@@ -117,7 +117,7 @@ a:active {
   border-radius: 3px;
   border-bottom: 2px solid #A074BD;
   /*width of border, type, color*/
-  transition: 0.2 opacity;
+  transition: 0.2s opacity;
 }
 
 .button:visited {
