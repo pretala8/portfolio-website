@@ -18,6 +18,8 @@ body {
 
 img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -285,6 +287,49 @@ footer p {
   text-align: center;
 }
 
+/*animation*/
+@keyframes color-change {
+  from {
+    fill: #EDC655;
+  }
+
+  to {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
 /*.prototype h3{
   padding: 0 15px;*/
 /* ==============================
@@ -302,7 +347,7 @@ Medium devices (640px and larger)
     margin-top: 14px;
   }
 
-  .navlinks{
+  .navlinks {
     font-size: 18px;
   }
 
@@ -329,16 +374,19 @@ Medium devices (640px and larger)
   .col-md-6 {
     width: 50%;
   }
-  [class*="col-"]{
+
+  [class*="col-"] {
     float: left;
     padding: 0 15px;
   }
+
   .row::after {
     content: "";
     clear: both;
     display: table;
   }
-  #about-page h3{
+
+  #about-page h3 {
     margin-top: 0;
   }
 }
@@ -347,18 +395,21 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  .container{
+  .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
-  .col-lg-7{
+
+  .col-lg-7 {
     width: 58.33%
   }
-  .col-lg-5{
+
+  .col-lg-5 {
     width: 41.66%
   }
-  [class*="col-"]{
+
+  [class*="col-"] {
     float: left;
     padding: 0 15px;
   }
@@ -368,7 +419,7 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-  .container{
+  .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
