@@ -416,10 +416,10 @@ Large devices (1024px or larger)
     padding: 0 15px;
   }
 
-  nav>ul>li.work:before
+  nav>ul>li>a.work:before
   {
       position: absolute;
-      width: 88px;
+      width: 58px;
       height: 2px;
       content: '';
       background: #FFF;
@@ -427,15 +427,15 @@ Large devices (1024px or larger)
       transition: all 0.3s;
   }
 
-  nav>ul>li.work:hover:before
+  nav>ul>li>a.work:hover:before
   {
       height: 30px;
   }
 
-  nav>ul>li.about:before
+  nav>ul>li>a.about:before
   {
       position: absolute;
-      width: 95px;
+      width: 65px;
       height: 2px;
       content: '';
       background: #FFF;
@@ -443,15 +443,15 @@ Large devices (1024px or larger)
       transition: all 0.3s;
   }
 
-  nav>ul>li.about:hover:before
+  nav>ul>li>a.about:hover:before
   {
       height: 30px;
   }
 
-  nav>ul>li.contact:before
+  nav>ul>li>a.contact:before
   {
       position: absolute;
-      width: 120px;
+      width: 90px;
       height: 2px;
       content: '';
       background: #FFF;
@@ -459,7 +459,7 @@ Large devices (1024px or larger)
       transition: all 0.3s;
   }
 
-  nav>ul>li.contact:hover:before
+  nav>ul>li>a.contact:hover:before
   {
       height: 30px;
   }
@@ -468,10 +468,10 @@ Large devices (1024px or larger)
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
   .container {
     max-width: 1200px;
     margin-left: auto;
+    @media only screen and (min-width: 1440px) {
     margin-right: auto;
   }
 }
