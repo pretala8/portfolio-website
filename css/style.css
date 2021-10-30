@@ -128,6 +128,7 @@ a:active {
 
 .button:hover, .button:focus {
   opacity: 0.8;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -146,6 +147,7 @@ a:active {
   padding: 10px;
   text-align: center;
   display: inline-block;
+  transition: background-color 0.3s;
   /*width: 100%;*/
 }
 
@@ -158,6 +160,10 @@ a:active {
 .button-contact:active {
   background-color: #449A89;
   color: #000000;
+}
+
+.li-skilltool>li {
+  font-family: 'Open Sans', sans-serif;
 }
 
 /*.logo {
@@ -388,7 +394,7 @@ Medium devices (640px and larger)
     display: table;
   }
 
-  #about-page h3 {
+  #about-page h3, #about-page h4 {
     margin-top: 0;
   }
 }
@@ -403,12 +409,47 @@ Large devices (1024px or larger)
     margin-right: auto;
   }
 
+  .navlinks{
+    font-size: 20px;
+  }
+
+  main {
+    padding-top: 127px;
+  }
+
+  body {
+    font-size: 20px;
+  }
+
+  #hero h1, #hero p {
+    padding-left: 20px;
+  }
+
+  .knowme p{
+    font-size: 18px;
+  }
+
+  .resume {
+    margin-top:25px;
+  }
+
+  .projtitle {
+    margin: 20px 0;
+  }
+
   .col-lg-7 {
-    width: 58.33%
+    width: 58.33%;
   }
 
   .col-lg-5 {
-    width: 41.66%
+    width: 41.66%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-10 {
+    width: 100%;
   }
 
   [class*="col-"] {
@@ -416,10 +457,21 @@ Large devices (1024px or larger)
     padding: 0 15px;
   }
 
+  li {
+    font-weight: 400;
+  }
+
+  .selfie{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   nav>ul>li>a.work:before
   {
       position: absolute;
-      width: 58px;
+      width: 64px;
       height: 2px;
       content: '';
       background: #FFF;
@@ -435,7 +487,7 @@ Large devices (1024px or larger)
   nav>ul>li>a.about:before
   {
       position: absolute;
-      width: 65px;
+      width: 72px;
       height: 2px;
       content: '';
       background: #FFF;
@@ -451,7 +503,7 @@ Large devices (1024px or larger)
   nav>ul>li>a.contact:before
   {
       position: absolute;
-      width: 90px;
+      width: 100px;
       height: 2px;
       content: '';
       background: #FFF;
@@ -468,10 +520,75 @@ Large devices (1024px or larger)
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
+@media only screen and (min-width: 1440px) {
   .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
-  @media only screen and (min-width: 1440px) {
+
+  .navlinks {
+    font-size: 24px;
+  }
+
+  .knowme p{
+    font-size: 20px;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0 20px;
+  }
+
+  nav>ul>li>a.work:before
+  {
+      position: absolute;
+      width: 77px;
+      height: 2px;
+      content: '';
+      background: #FFF;
+      opacity: 0.3;
+      transition: all 0.3s;
+  }
+
+  nav>ul>li>a.work:hover:before
+  {
+      height: 30px;
+  }
+
+  nav>ul>li>a.about:before
+  {
+      position: absolute;
+      width: 86px;
+      height: 2px;
+      content: '';
+      background: #FFF;
+      opacity: 0.3;
+      transition: all 0.3s;
+  }
+
+  nav>ul>li>a.about:hover:before
+  {
+      height: 30px;
+  }
+
+  nav>ul>li>a.contact:before
+  {
+      position: absolute;
+      width: 120px;
+      height: 2px;
+      content: '';
+      background: #FFF;
+      opacity: 0.3;
+      transition: all 0.3s;
+  }
+
+  nav>ul>li>a.contact:hover:before
+  {
+      height: 30px;
+  }
+
+  .projtitle {
+    margin: 40px 0;
+  }
 }
