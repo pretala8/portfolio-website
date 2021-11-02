@@ -226,9 +226,10 @@ nav>ul>li {
 }
 
 nav>ul>li>a {
-  padding: 0 15px;
+  margin: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
+  position: relative;
   /*color: #4a4a4a;*/
   /*for :visited, :hover, :active, styles have been changed using class navlinks (check stylings above in lines 66-83)*/
 }
@@ -468,52 +469,20 @@ Large devices (1024px or larger)
     margin-right: auto;
   }
 
-  nav>ul>li>a.work:before
-  {
-      position: absolute;
-      width: 64px;
-      height: 2px;
-      content: '';
-      background: #FFF;
-      opacity: 0.3;
-      transition: all 0.3s;
+  /*navigation animation*/
+  nav>ul>li>a:before{
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
   }
 
-  nav>ul>li>a.work:hover:before
+  nav>ul>li>a:hover:before
   {
-      height: 30px;
-  }
-
-  nav>ul>li>a.about:before
-  {
-      position: absolute;
-      width: 72px;
-      height: 2px;
-      content: '';
-      background: #FFF;
-      opacity: 0.3;
-      transition: all 0.3s;
-  }
-
-  nav>ul>li>a.about:hover:before
-  {
-      height: 30px;
-  }
-
-  nav>ul>li>a.contact:before
-  {
-      position: absolute;
-      width: 100px;
-      height: 2px;
-      content: '';
-      background: #FFF;
-      opacity: 0.3;
-      transition: all 0.3s;
-  }
-
-  nav>ul>li>a.contact:hover:before
-  {
-      height: 30px;
+      height: 100%;
   }
 }
 
@@ -540,52 +509,20 @@ X-large devices (1440px or larger)
     padding: 0 20px;
   }
 
-  nav>ul>li>a.work:before
-  {
-      position: absolute;
-      width: 77px;
-      height: 2px;
-      content: '';
-      background: #FFF;
-      opacity: 0.3;
-      transition: all 0.3s;
+  /*navigation animation*/
+  nav>ul>li>a:before{
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
   }
 
-  nav>ul>li>a.work:hover:before
+  nav>ul>li>a:hover:before
   {
-      height: 30px;
-  }
-
-  nav>ul>li>a.about:before
-  {
-      position: absolute;
-      width: 86px;
-      height: 2px;
-      content: '';
-      background: #FFF;
-      opacity: 0.3;
-      transition: all 0.3s;
-  }
-
-  nav>ul>li>a.about:hover:before
-  {
-      height: 30px;
-  }
-
-  nav>ul>li>a.contact:before
-  {
-      position: absolute;
-      width: 120px;
-      height: 2px;
-      content: '';
-      background: #FFF;
-      opacity: 0.3;
-      transition: all 0.3s;
-  }
-
-  nav>ul>li>a.contact:hover:before
-  {
-      height: 30px;
+      height: 100%;
   }
 
   .projtitle {
