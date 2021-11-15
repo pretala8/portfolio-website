@@ -25,15 +25,18 @@
   <header>
     <div class="container">
       <!--link logo to home page-->
-      <a href="index.html" class="navlinks name" id="logo-link"><img src="img/logo/logo-name1.png" alt="Michelle Myrick"></a>
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html" class="navlinks work">Work</a></li>
-          <li><a href="about.html" class="navlinks about">About</a></li>
-          <li><a href="#contact" class="navlinks contact">Contact</a></li>
-        </ul>
-        <!--maybe add another link for resume?-->
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html" class="navlinks name" id="logo-link"><img src="img/logo/logo-name1.png" alt="Logo"></a>
+        <nav class="pullDown">
+          <ul class="navigation">
+            <li><a href="index.html" class="navlinks work">Work</a></li>
+            <li><a href="about.html" class="navlinks about">About</a></li>
+            <li><a href="#contact" class="navlinks contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+          <!--maybe add another link for resume?-->
+        </nav>
+      </div>
     </div>
   </header>
 
