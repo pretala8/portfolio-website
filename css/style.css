@@ -197,7 +197,7 @@ a:active {
 
 #logo-link {
   display: inline-block;
-  max-width: 250px;
+  max-width: 175px;
   width: 100%;
   /*affects link text and img size*/
 }
@@ -209,7 +209,6 @@ a:active {
 
 header {
   background-color: #A074BD;
-  text-align: center;
   padding: 10px 0;
   box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.7);
   position: fixed;
@@ -219,10 +218,7 @@ header {
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -234,9 +230,21 @@ nav>ul>li>a {
   /*for :visited, :hover, :active, styles have been changed using class navlinks (check stylings above in lines 66-83)*/
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
+.navtoggle li:not(:last-child){
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive{
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 14px;
+  font-size: 20px;
+  color: #000000;
+  padding-right: 0;
 }
 
 #hero {
@@ -247,7 +255,7 @@ nav {
 }
 
 main {
-  padding-top: 168px;
+  padding-top: 85px;
 }
 
 footer {
@@ -314,9 +322,27 @@ Medium devices (640px and larger)
     margin-top: 14px;
   }
 
+  #logo-link{
+    max-width: 250px;
+  }
+
   .navlinks {
     font-size: 18px;
   }
+
+  nav>ul{
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child){
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child{display: none;}
 
   main {
     padding-top: 125px;
