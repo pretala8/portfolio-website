@@ -171,7 +171,7 @@ a:active {
   /*affects img size only, need to update logo with name included
 */
 /*Layout Styling*/
-.container {
+.container, .prototype {
   padding: 0 15px;
 }
 
@@ -313,13 +313,17 @@ footer p {
   display: inline-block;
   width: 100%;
   text-align: center;
+  padding: 0 0 20px;
 }
 
 .aboutsection, .skilltool {
   text-align: center;
 }
 
-
+/*Don't show the embedded protoype on mobile screens*/
+.prototype iframe {
+  display: none;
+}
 
 /*animation*/
 
@@ -398,6 +402,15 @@ Medium devices (640px and larger)
 
   #about-page h3, #about-page h4 {
     margin-top: 0;
+  }
+
+  .prototype a{
+    display: none;
+  }
+
+  .prototype iframe{
+    display: inline-block;
+    text-align: center;
   }
 }
 
