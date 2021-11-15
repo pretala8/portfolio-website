@@ -247,6 +247,10 @@ nav>ul>li>a {
   padding-right: 0;
 }
 
+.navtoggle.responsive li{
+  display: block;
+}
+
 #hero {
   background-color: rgba(108, 185, 170, 0.5);
   padding: 20px 0;
