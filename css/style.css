@@ -322,6 +322,10 @@ footer p {
   display: none;
 }
 
+.prototype a {
+  display: block;
+}
+
 /*animation*/
 html {
   scroll-behavior: smooth;
