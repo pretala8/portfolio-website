@@ -359,6 +359,29 @@ Medium devices (640px and larger)
 
   nav>ul>li {
     display: inline-block;
+    position: relative;
+  }
+
+  /*projects dropdown*/
+  nav>ul>li>ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-left: 0;
+    background: rgba(255,255,255,0.5);
+    transition: all 0.3s;
+    min-width: 150px;
+    display: none;
+  }
+
+  nav>ul>li:hover ul {
+    display: block;
+  }
+
+  nav>ul>li>ul>li, .navtoggle li li:not(:last-child), .navtoggle li li:last-child {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 
   .navtoggle li:not(:last-child) {
