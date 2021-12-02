@@ -253,6 +253,11 @@ nav>ul>li>a {
   border-top: 1px solid rgba(126, 77, 160, 0.75);
 }
 
+.navtoggle.responsive li>ul>li {
+  padding: 0 0 15px;
+  border-top: 0;
+}
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
