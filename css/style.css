@@ -118,7 +118,6 @@ a:active {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #A074BD;
-  margin: 0 15px;
   /*width of border, type, color*/
   transition: 0.2s opacity;
 }
@@ -161,6 +160,10 @@ a:active {
 .button-contact:active {
   background-color: #449A89;
   color: #000000;
+}
+
+.button.res-hero {
+  margin: 0 15px;
 }
 
 .li-skilltool>li {
