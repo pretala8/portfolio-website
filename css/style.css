@@ -449,15 +449,6 @@ Medium devices (640px and larger)
   #about-page h3, #about-page h4 {
     margin-top: 0;
   }
-
-  .prototype a {
-    display: none;
-  }
-
-  .prototype iframe {
-    display: inline-block;
-    text-align: center;
-  }
 }
 
 /* ==============================
@@ -552,6 +543,15 @@ Large devices (1024px or larger)
   .home_skills {
     font-size: 16px;
     font-weight: 600;
+  }
+
+  .prototype a {
+    display: none;
+  }
+
+  .prototype iframe {
+    display: inline-block;
+    text-align: center;
   }
 }
 
