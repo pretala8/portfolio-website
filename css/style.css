@@ -118,6 +118,7 @@ a:active {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #A074BD;
+  margin: 0 15px;
   /*width of border, type, color*/
   transition: 0.2s opacity;
 }
@@ -193,6 +194,10 @@ a:active {
 
 #hero p {
   text-align: center;
+}
+
+.cta, .cta:visited {
+  color: #000000;
 }
 
 #logo-link {
