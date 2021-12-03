@@ -310,6 +310,10 @@ footer p {
   display: inline-block;
 }
 
+.social>a:visited {
+  color: #449A89;
+}
+
 .prototype {
   display: inline-block;
   width: 100%;
