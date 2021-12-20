@@ -413,7 +413,7 @@ Medium devices (640px and larger)
     padding: 0;
   }
 
-  .navtoggle.responsive li {
+  .navtoggle.responsive li, .navtoggle.responsive li li:last-child {
     display: inline-block;
     padding: 0;
     border-top: 0;
